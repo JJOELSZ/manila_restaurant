@@ -23,12 +23,13 @@ d.addEventListener("DOMContentLoaded", () => {
         $btnSubir.classList.remove("ocultar");
         console.log("Muestrate");
        }
-   })
-
- 
+   }) 
    d.addEventListener("click",(e)=>{
      if(e.target.matches(".btnSubir") || e.target.matches(".btnSubir *") ){
-        
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
      }
    })
  }
